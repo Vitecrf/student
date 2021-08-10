@@ -65,7 +65,7 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	private StudentBaseDto converToStudentBaseDto(Student student) {
-		return StudentBaseDto.builder().id(student.getId()).name(student.getName()).password(student.getPassword())
+		return StudentBaseDto.builder().id(student.getId()).name(student.getName()).password(student.getPassword()).group(student.getGroup())
 				.build();
 	}
 

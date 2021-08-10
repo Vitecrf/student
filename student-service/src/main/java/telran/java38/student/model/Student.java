@@ -12,7 +12,7 @@ import lombok.Setter;
 
 @Getter
 @EqualsAndHashCode(of = {"id"})
-//@Document(collation = "student2021")		//прописываем имя коллекции в монго ДБ либо указываем имя коллекции к которой нужно подключится
+@Document(collection = "post")		//прописываем имя коллекции в монго ДБ либо указываем имя коллекции к которой нужно подключится
 public class Student {
 	@Id
 	Integer id;
